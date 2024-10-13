@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+string passorfail(int marks)
+{
+    if(marks>50)
+        return "You Are Passed" +to_string(marks) + " Marks";
+    else
+        return "You Are Failed " +to_string(marks) + " Marks";
+}
+
+main()
+{
+    int marks;
+    cout<<"Enter Marks: ";
+    cin>>marks;
+
+    cout<<passorfail(marks);
+}
